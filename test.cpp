@@ -8,6 +8,10 @@ void matrixOutput();
 
 void task1();
 
+void task2();
+
+void task3();
+
 void menu();
 
 int main()
@@ -26,6 +30,14 @@ int main()
             matrixOutput();
             task1();
             break;
+        case 2:
+            matrixOutput();
+            task2();
+            break;
+        case 3:
+            matrixOutput();
+            task3();
+            break; 
         default:
             cout << "Unknown command" << endl;
             break;
@@ -98,5 +110,19 @@ void task2() {
         }
         IsEqual = 1;
     }
+    system("pause");
+}
+
+void task3(int summ) {
+    cout << "________________________________" << endl;
+    cout << "Task 3:" << endl;
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE - i; j++) {
+            summ += a[i][j];
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << "total sum:" << summ << endl;
     system("pause");
 }
