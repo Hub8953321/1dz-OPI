@@ -12,6 +12,7 @@ void menu();
 int main()
 {
     menu();
+    int someNewValue = 123;//ќставил что-то
     int menuNum;
     cin >> menuNum;
     while (menuNum) {
