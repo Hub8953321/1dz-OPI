@@ -13,7 +13,7 @@ void menu();
 int main()
 {
     menu();
-    int someNewValue = 123;//Îñòàâèë ÷òî-òî
+    int someNewValue = 123;//ÃŽÃ±Ã²Ã Ã¢Ã¨Ã« Ã·Ã²Ã®-Ã²Ã®
     int menuNum;
     cin >> menuNum;
     while (menuNum) {
@@ -77,6 +77,26 @@ void task1() {
                 summ = 0;
             }
         }
+    }
+    system("pause");
+}
+void task2() {
+    cout << "________________________________" << endl;
+    cout << "Task 2:" << endl;
+    cout << "Not equal strings:" << endl;
+    bool IsEqual = 1;
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            if (a[i][j] != a[SIZE - i][j]) {
+                cout << i + 1 << "\n";
+                IsEqual = 0;
+                break;
+            }
+        }
+        if (IsEqual) {
+            cout << i + 1 << "tr\n";
+        }
+        IsEqual = 1;
     }
     system("pause");
 }
